@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="auto_size_elements.js"></script>
+    <style>
+      .category {border: 3px solid #999999; padding: 5px; margin: 5px;}
+      .img_div {padding: 2px; line-height: 0px;}
+      .clear {clear: both; height: 0px; display: block; line-height: 0px;}
+    </style>
+  </HEAD>
+  <BODY>
+    <div id="full_width" style="width: 100%; border: 3px solid #000000; ">
+      <div id="left_side" style="width: 50%; float: left;">
+	<div id="left_1" class="auto_resize">
+	  <div id="maternity" style="width: 410px; float: left;" class="img_div"><IMG SRC="gallery_categories/maternity.jpg" width="100%" /></div>
+	  <div id="first_few_years" style="width: 241px; float: left;" class="img_div"><IMG SRC="gallery_categories/first_few_years.jpg" width="100%" /></div>
+	  <div class="clear no_auto">&nbsp;</div>
+	</div>
+	<div id="left_2" class="auto_resize">
+	  <div id="newborn" style="width: 293px; float: left;" class="img_div"><IMG SRC="gallery_categories/newborn.jpg" width=100% /></div>
+	  <div id="family_and_growing_up" style="width: 362px; float: left;" class="img_div">
+	    <IMG class="img_div"  SRC="gallery_categories/family.jpg" width="100%" />
+	    <IMG class="img_div"  SRC="gallery_categories/growing_up.jpg" width="100%" />
+	  </div>
+	  <div class="clear no_auto">&nbsp;</div>
+	</div>
+	
+	<div class="clear no_auto">&nbsp;</div>
+      </div>
+      <div id="right_side" style="width: 50%; float: left;">
+	<div id="right_1" class="auto_resize">
+	  <div id="glamour" style="width: 293px; float: left;" class="img_div"><IMG SRC="gallery_categories/glamour.jpg" width=100% /></div>
+	  <div id="pet_and_graduation" style="width: 369px; float: left;" class="img_div">
+	    <IMG SRC="gallery_categories/pet.jpg" width=100% />
+	    <IMG SRC="gallery_categories/graduation.jpg" width=100% />
+	  </div>
+	</div>
+	<div id="right_2" class="auto_resize">
+	  <div style="width: 440px; float: left;" class="img_div"><IMG class="img_div" SRC="gallery_categories/bridal.jpg" width=100% /></div>
+	  <div style="width: 210px; float: left;" class="img_div"><IMG class="img_div" SRC="gallery_categories/couple.jpg" width=100% /></div>
+	</div>
+	  
+      </div>
+
+<!---
+--->
+      	  <div class="clear no_auto">&nbsp;</div>
+    </div>
+    <script>
+      $( document ).ready(function() {
+      $(".auto_resize").autoSizeElements({handleBoxModel: true});
+      });
+    </script>
+  </BODY>
+</HTML>
